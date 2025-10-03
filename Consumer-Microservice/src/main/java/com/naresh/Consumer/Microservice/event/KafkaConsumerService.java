@@ -1,5 +1,6 @@
 package com.naresh.Consumer.Microservice.event;
 
+import com.spring.core.library.ProductCreatedEvent;
 import org.springframework.kafka.annotation.KafkaHandler;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;

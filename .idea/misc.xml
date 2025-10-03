@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/KafkaDockerCompose/pom.xml" />
         <option value="$PROJECT_DIR$/Producer Microservice/Producer-Microservice/pom.xml" />
         <option value="$PROJECT_DIR$/Consumer-Microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/core-library/pom.xml" />
       </list>
     </option>
   </component>

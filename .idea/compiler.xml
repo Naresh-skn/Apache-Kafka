@@ -8,7 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Consumer-Microservice" />
-        <module name="kafkaDockerCompose" />
+        <module name="core-library" />
       </profile>
       <profile name="Annotation profile for Producer-Microservice" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -16,16 +16,19 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="Producer-Microservice" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="kafkaDockerCompose" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Consumer-Microservice" options="-parameters" />
       <module name="Producer-Microservice" options="-parameters" />
+      <module name="core-library" options="-parameters" />
     </option>
   </component>
 </project>

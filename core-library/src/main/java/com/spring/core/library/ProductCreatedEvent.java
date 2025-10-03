@@ -1,4 +1,4 @@
-package com.spring.Producer.Microservice.service;
+package com.spring.core.library;
 
 public class ProductCreatedEvent {
     private String productId;
