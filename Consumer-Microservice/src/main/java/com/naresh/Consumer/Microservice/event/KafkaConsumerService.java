@@ -11,6 +11,7 @@ public class KafkaConsumerService {
 
     @KafkaHandler
     public void handleNotification(ProductCreatedEvent productCreatedEvent){
+        if(true) throw new NullPointerException();
         System.out.println(productCreatedEvent.getTitle());
     }
 
